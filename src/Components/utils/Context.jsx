@@ -7,13 +7,10 @@ import axios from "axios";
 
  const ContextProvider = ({ children }) => {
   //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
-
-      const [data, setData] = useState([])
       
 
   return (
-    <ContextGlobal.Provider 
-      value={{}}>
+    <ContextGlobal.Provider>
       {children}
     </ContextGlobal.Provider>
   );

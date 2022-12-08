@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Navbar = () => {
+  const cambio = () => {
+
+  }
 
   return (
     <nav className='nav'>
@@ -15,7 +18,7 @@ const Navbar = () => {
       
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <button className='noche'>Mode</button>
+      <button className='favButton' onClick={cambio()}>Mode</button>
       </div>
     </nav>
   )
