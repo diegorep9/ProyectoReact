@@ -3,21 +3,27 @@ import axios from "axios";
 
  const ContextGlobal = createContext();
 
- const initialState = {theme: " ", data: []}
+ const initialState = {theme: " "}
 
  const ContextProvider = ({ children }) => {
   //Aqui deberan implementar la logica propia del Context, utilizando el hook useMemo
 
-      const [data, setData] = useState([])
-      
+  const url = 'https://jsonplaceholder.typicode.com/users'
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    axios(url)
+    .then(res => setData(res.data))
+    .catch(err => console.log(err))
+  }, [])
 
   return (
     <ContextGlobal.Provider 
-      value={{}}>
+      value = { {data} }>
       {children}
     </ContextGlobal.Provider>
-  );
-};
+  )
+}
 
 
 export default ContextProvider;

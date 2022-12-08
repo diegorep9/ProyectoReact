@@ -23,9 +23,9 @@ const Form = () => {
     const regexFullName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     const regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
 
-    if(!input.fullName.trim()){
+    if(input.fullName.length < 5){
 
-      return alert('Debe llenar el campo nombre')
+      return alert('EL campo nombre debe tener mas de 5 caracteres')
 
     }else if(!regexFullName.test(input.fullName)){
 
