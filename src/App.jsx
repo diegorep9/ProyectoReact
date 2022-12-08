@@ -13,11 +13,11 @@ function App() {
           <Navbar/>
 
            <Routes>
-            <Route path="/favs" element={<Favs/>}/>
+            <Route path="/Favs" element={<Favs/>}/>
           <Route path="/Contact" element={<Contact/>}/>
-
+        
            <Route path="/" element={<Home/>}>
-            <Route path="/datail:id" element={<Detail/>}/>
+            <Route path="/Detail:id" element={<Detail/>}/>
            </Route>
 
            </Routes>
