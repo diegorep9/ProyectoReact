@@ -16,13 +16,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.favButton{
-  background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-}
+
 
 h1{
   text-align: center;
@@ -47,6 +41,15 @@ a:hover{
   color: rgb(5, 4, 4);
 } 
 
+.favButton{
+  border-color: rgb(19, 17, 17);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.favButton:hover{
+  border-color: rgb(118, 113, 107);
+  color: rgb(74, 66, 66);
+}
 
 footer > img{
   width: 200px;
@@ -109,11 +112,11 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.dark{
+#dark{
   background-color: #12121296;
   color: white;
 }
-.dark > a {
+#dark > a {
   color: white;
 }
 .p_nav{
