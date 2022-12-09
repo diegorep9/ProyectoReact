@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect, useReducer, useContext } from "react";
+import { createContext, useState, useEffect, useContext } from "react";
 import axios from "axios";
 
  const ContextGlobal = createContext();
@@ -10,6 +10,9 @@ import axios from "axios";
 
   const url = 'https://jsonplaceholder.typicode.com/users'
   const [data, setData] = useState([])
+  const [favorites, setFavorites] = useState([])
+    
+
 
   useEffect(() => {
     axios(url)
@@ -17,9 +20,11 @@ import axios from "axios";
     .catch(err => console.log(err))
   }, [])
 
+  
+
   return (
     <ContextGlobal.Provider 
-      value = { {data} }>
+      value = { {data, favorites, setFavorites} }>
       {children}
     </ContextGlobal.Provider>
   )

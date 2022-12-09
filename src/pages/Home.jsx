@@ -13,6 +13,7 @@ const Home = () => {
     <main className="" >
       <h1>Home</h1>
       <div className='card-grid'>
+        
         {data.map(info => (<Card key = {info.id} id = {info.id} name = {info.name} username = {info.username}/> ))}
       </div>
     </main>
