@@ -9,7 +9,14 @@ import axios from "axios";
       id: ''
     },
     dark: {
-      background: 'dark'
+      background: 'dark',
+      navdark: 'nav-dark',
+      textdark: 'texto-dark',
+      botondark: 'boton-dark',
+      botonmode: 'boton-mode',
+      hovernav: 'hover-nav',
+      textoblanco: 'texto-blanco',
+      linearoja: 'linea-roja'
     }
  }}
 

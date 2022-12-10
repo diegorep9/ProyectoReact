@@ -1,9 +1,11 @@
 import React from 'react'
+import { useGlobalStates } from './utils/Context'
 
 const Footer = () => {
+  const {theme, changeTheme} = useGlobalStates()
   return (
-    <footer>
-      <div className='p-footer'><p>Volver al inicio</p></div>
+    <footer id={theme.background}>
+      <div className='p-footer' id={theme.linearoja}><p>Volver al inicio</p></div>
      
 
      <div className='logos'> 

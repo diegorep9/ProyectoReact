@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { useGlobalStates } from "./utils/Context";
 
 
 const Form = () => {
   //Aqui deberan implementar el form completo con sus validaciones
-  
+  const {theme, changeTheme} = useGlobalStates()
   const [input, setInput] = useState({
     fullName: '',
     email: ''
@@ -59,9 +60,9 @@ const Form = () => {
   return (
     <div>
       <form action = "" onSubmit={handleSubmit}>
-        <label>Full Name</label>
+        <label id={theme.textoblanco}>Full Name</label>
         <input type='text' name='fullName' onChange={handleChange}/>
-        <label>Email</label>
+        <label id={theme.textoblanco}>Email </label>
         <input type='email' name='email' onChange={handleChange}/>
         <button>Send</button>
       </form>
