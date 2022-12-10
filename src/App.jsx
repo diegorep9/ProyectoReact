@@ -5,12 +5,15 @@ import Home from "./pages/Home"
 import Favs from "./pages/Favs"
 import Contact from "./pages/Contact"
 import Detail from "./pages/Detail"
+import { useGlobalStates } from "./Components/utils/Context";
+
+
 
 function App() {
 
-
+  const {theme} = useGlobalStates()
   return (
-      <div className="App">
+      <div className="App" id={theme.background}>
           <Navbar/>
 
            <Routes>

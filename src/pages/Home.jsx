@@ -7,10 +7,10 @@ import {useGlobalStates} from '../Components/utils/Context'
 const Home = () => {
 
 
-  const { data } = useGlobalStates()
+  const { data, theme } = useGlobalStates()
 
   return (
-    <main className="" >
+    <main id={theme.background} >
       <h1>Home</h1>
       <div className='card-grid'>
         

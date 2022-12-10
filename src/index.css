@@ -112,13 +112,7 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-#dark{
-  background-color: #12121296;
-  color: white;
-}
-#dark > a {
-  color: white;
-}
+
 .p_nav{
   font-family:  Tahoma, sans-serif;
   font-size: 1.2rem;
@@ -211,4 +205,12 @@ tr:nth-child(even) {
 }
 .favButton:active{
   cursor: wait;
+}
+
+#dark{
+  background-color: #12121296;
+  color: white;
+}
+#dark > a {
+  color: white;
 }
